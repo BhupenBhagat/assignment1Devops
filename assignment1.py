@@ -11,6 +11,10 @@ def read_root():
 def read_root():
     return {"Hello": "duniya"}
 
+@app.get("/v1")
+def read_root():
+    return {"get": "lost"}
+
 @app.get("/about")
 def about():
     return {"msg": "About Us"}
